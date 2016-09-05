@@ -35,8 +35,9 @@ Pre-Requisites:
 
 ## Rough Outline of Possible Solution 
 
-* 1. Create a function that creats a vector of all the desired URLs on the malaria country profiles' page. Hint 1: This function should be able to use a css selector (".a_z a") to find the links, and then search for hyperlink atrributes ("href") to find the links.
-Hint 2: For R users, the R package [rvest] and [xml2] will be very useful here.
+* 1. Create a function that creats a vector of all the desired URLs on the malaria country profiles' page. 
+  + Hint 1: This function should be able to use a css selector (".a_z a") to find the links, and then search for hyperlink atrributes ("href") to find the links.
+  + Hint 2: For R users, the R package [rvest] and [xml2] will be very useful here.
 * 2. Create a script to use the urls to download the corresponding PDFs and search for a text string whch preceeds the information of interest. 
-Hint 1. After converting the pdf into text (R and Python [pdftools] and PDFMiner packages respectively) suitable string to search for would perhaps be "Reported confrmed cases:".
-Hint 2: After findind the location ofthe string of interest, usig the following x number of characters the number of interest can be isolated using white space as word breaks. For R users, the string/character handling package [stringr] will be of help here. 
+  + Hint 1. After converting the pdf into text (R and Python [pdftools] and PDFMiner packages respectively) suitable string to search for would perhaps be "Reported confrmed cases:".
+  + Hint 2: After findind the location ofthe string of interest, usig the following x number of characters the number of interest can be isolated using white space as word breaks. For R users, the string/character handling package [stringr] will be of help here. 
